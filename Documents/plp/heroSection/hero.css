@@ -1,0 +1,131 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background: linear-gradient( #00050e, #453370);
+    height: 60vh;
+
+}
+
+header{
+    padding: 1.2rem;
+}
+
+.logoText{
+    color: white;
+    border: 2px solid orange;
+
+    
+}
+
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /*border: 1px solid yellow;*/
+    
+    
+}
+
+
+.navBar a{
+    color: white;
+    text-decoration: none;
+    padding-inline: 1rem;
+    
+}
+
+
+.sign-btn{
+    border: 2px solid white;
+    padding:.3rem;
+    border-radius: 4px;
+}
+
+.fa-search{
+    color: white;
+    font-size: 24px;
+    
+}
+
+.hero_title{
+    text-align: center;
+    padding-top: 2rem;
+}
+.text{
+    color: white;
+    font-size: 3.5rem;
+
+}
+
+.subText{
+    color: white;
+    font-weight: 400;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.input{
+    position: relative;
+    align-items: center;
+    display: flex;
+    
+}
+
+.email{
+    width:25vw;
+    padding: .75rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+.sbtn{
+    
+    background-color: green;
+    color: white;
+    border: none;
+    outline-color: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: .6rem .7rem;
+    border-radius: 6px;
+    
+    width: 50%;
+    position: absolute;
+    top:.2rem;
+    right: 0.2rem;
+    
+    font-weight: 400;
+}
+
+.gbtn{
+    padding:.6rem;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: .5rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.navBar a:hover{
+    border: 1px solid white;
+    padding: .5rem;
+
+}
