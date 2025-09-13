@@ -40,7 +40,9 @@ try:
     plt.figure(figsize=(10,6))
     sns.barplot(x='sex', y ='total_bill', data=tips)
     plt.title('Average Total Bill Accross Sex')
-    plt.show();
+    plt.xlabel('Sex')
+    plt.ylabel('Average Total Bill')
+    plt.show()
 except Exception as e:   
     print(f"Failed to create bar chart: {e}")
    
@@ -49,6 +51,8 @@ try:
      plt.figure(figsize=(10,6))
      sns.histplot(tips['total_bill'], bins=10, kde=True)
      plt.title('Distribution of Total bills')
+     plt.xlabel('Total Bill')
+     plt.ylabel('Frequency')
      plt.show()
 except Exception as e:   
     print(f"Failed to create histogram: {e}")
@@ -71,8 +75,21 @@ try:
     plt.figure(figsize=(10,6))
     sns.boxplot(x='day', y ='tip', data=tips)
     plt.title('Distribution of Tip across Day')
+    plt.xlabel('Day')
+    plt.ylabel('Tip')
     plt.show()
 except Exception as e:   
     print(f"Failed to create box chart: {e}")
    
+
+try:
+    #line chart
+    plt.figure(figsize=(10,6))
+    sns.barplot(x='day', y ='total_bill', data=tips.groupby('day')['total_bill'].mean().reset_index())
+    plt.title('Average Total Bill over Time')
+    plt.xlabel('Day')
+    plt.ylabel('Average Total Bill')
+    plt.show();
+except Exception as e:   
+    print(f"Failed to create line chart: {e}")
 
